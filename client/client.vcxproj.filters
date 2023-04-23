@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ClientGame">
+      <UniqueIdentifier>{30b26bbb-5738-41e1-b6d9-bdb7a4ce0d86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClientNetwork">
+      <UniqueIdentifier>{05a9d37d-df28-461b-ad60-30eacbb80449}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Drawing">
+      <UniqueIdentifier>{09dd0bd0-5705-48e7-97f2-1041931218d3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Client.cpp" />
+    <ClCompile Include="ClientGame.cpp">
+      <Filter>ClientGame</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientNetwork.cpp">
+      <Filter>ClientNetwork</Filter>
+    </ClCompile>
+    <ClCompile Include="Drawing.cpp">
+      <Filter>Drawing</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ClientGame.h">
+      <Filter>ClientGame</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientNetwork.h">
+      <Filter>ClientNetwork</Filter>
+    </ClInclude>
+    <ClInclude Include="Drawing.h">
+      <Filter>Drawing</Filter>
+    </ClInclude>
+    <ClInclude Include="Tile.h" />
+  </ItemGroup>
+</Project>

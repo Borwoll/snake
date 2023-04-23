@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ServerGame">
+      <UniqueIdentifier>{b9f82762-181c-4215-a011-f323d20edbe8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ServerNetwork">
+      <UniqueIdentifier>{a070647f-2f95-49ef-a176-9ee736641fac}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Server.cpp" />
+    <ClCompile Include="ServerGame.cpp">
+      <Filter>ServerGame</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerNetwork.cpp">
+      <Filter>ServerNetwork</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ServerGame.h">
+      <Filter>ServerGame</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerNetwork.h">
+      <Filter>ServerNetwork</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="Logger.h" />
+  </ItemGroup>
+</Project>
